@@ -405,7 +405,8 @@ footer {
   cursor: pointer;
   position: absolute;
   top: 15px;
-  
+  border-radius: 0%;
+  background-color: transparent;
   z-index: 1100;
 }
 
@@ -503,10 +504,15 @@ body.modo-oscuro .red_github_text {
     padding-top: 0;
   }
 
-  nav{
-    padding:0;
+  nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
   }
-  
+
   nav ul.navbar {
     display: none;
     flex-direction: column;
@@ -568,6 +574,30 @@ body.modo-oscuro .red_github_text {
     width: 32px;
     height: 32px;
   }
+
+  .typing {
+    margin-top: 15px;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modo-oscuro-icon {
+    top: 30%;
+    transform: translateY(-50%);
+    right: 16px;
+  }
+
+
 
 }
 
