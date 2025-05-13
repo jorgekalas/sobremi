@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <title>Jorge Kalas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Menú de navegación -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#redes">Mis redes</a></li>
+        <li><a href="#stack">Mi Stack Tecnológico</a></li>
+        <li><a href="#contacto">Contactame</a></li>
+        <li><a href="#cv">CV-Resume</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Botón hamburguesa -->
+    <button id="menuToggle" class="menu-toggle">☰</button>
+
+    <!-- Botón para alternar modo oscuro -->
+    <div class="btn-modo-oscuro-container">
+      <span id="modoOscuroToggle" class="modo-oscuro-icon" title="Cambiar tema">🌙</span>
+    </div>
+  </header>
+
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Sección de presentación -->
+    <section id="sobre-mi" class="intro scroll-hidden scroll-zoom">
+      <h1 class="typing">Jorge Kalás | Mi Portfolio</h1>
+      <hr>
+      <!-- Foto personal -->
+      <section class="foto_personal">
+        <figure>
+          <img src="./assets/foto.jpg" alt="Imagen personal">
+          <figcaption>¡Hola! Soy Jorge 👨‍💻</figcaption>
+        </figure>
+      </section>
+      <!-- Breve descripción profesional -->
+      <h2>Sobre mí</h2>
+      <div class="bio-container scroll-hidden">
+
+        <p>Desarrollador con más de 3 años de experiencia en aplicaciones web y móviles, y más de 7 años en el área de
+          finanzas y análisis de datos. Me especializo en crear aplicaciones intuitivas, funcionales y adaptables.</p>
+
+        <p>Aunque me enfoco en el front-end, tengo perfil full-stack en evolución. Esta combinación técnica y
+          estratégica
+          me permite aportar valor real a los usuarios y los objetivos del negocio.</p>
+
+        <p>Actualmente me desempeño como analista de datos y desarrollador en Accenture, colaborando en productos
+          financieros y tecnológicos diversos.</p>
+
+        <p>Mis hobbies son el running, el gimnasio, la música, los buenos libros y los paseos por las montañas y el río
+          de mi localidad.</p>
+
+
+
+      </div>
+
+
+
+      <!-- Sección Mis Redes -->
+      <section id="redes" class="redes scroll-hidden">
+        <h2>Mis redes</h2>
+
+        <div class="redes-container">
+          <div class="red">
+            <a href="https://www.linkedin.com/in/jorgekalas" target="_blank">
+              <img src="./assets/linkedin.png" alt="Logotipo de LinkedIn">
+              <span>¡Conoceme mejor en LinkedIn!</span>
+            </a>
+          </div>
+
+          <div class="red">
+            <a href="https://www.github.com/jorgekalas" target="_blank">
+              <img src="./assets/github.jpg" alt="Logotipo de GitHub">
+              <span class="red_github_text">¡Descubre mi repo en GitHub!</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Stack tecnológico -->
+      <section class="stack " id="stack">
+        <h2>Mi Stack Tecnológico</h2>
+        <div class="stack-grid scroll-hidden">
+          <!-- Cada ítem representa una tecnología -->
+          <article>
+            <img src="assets/linux.jpg" alt="Linux">
+            <p>Linux</p>
+          </article>
+          <article>
+            <img src="assets/html.png" alt="HTML5">
+            <p>HTML5</p>
+          </article>
+          <article>
+            <img src="assets/css.png" alt="CSS3">
+            <p>CSS3</p>
+          </article>
+          <article>
+            <img src="assets/javascript.webp" alt="JavaScript">
+            <p>JavaScript</p>
+          </article>
+          <article>
+            <img src="assets/react.png" alt="React">
+            <p>React JS</p>
+          </article>
+          <article>
+            <img src="assets/postman.webp" alt="Postman">
+            <p>Postman</p>
+          </article>
+          <article>
+            <img src="assets/github.jpg" alt="GitHub">
+            <p>GitHub</p>
+          </article>
+          <article>
+            <img src="assets/mysql.webp" alt="MySQL">
+            <p>MySQL</p>
+          </article>
+          <article>
+            <img src="assets/powerbi.avif" alt="Power BI">
+            <p>Power BI</p>
+          </article>
+          <article>
+            <img src="assets/looker.webp" alt="Looker">
+            <p>Looker</p>
+          </article>
+          <article>
+            <img src="assets/python.png" alt="Python">
+            <p>Python</p>
+          </article>
+          <article>
+            <img src="assets/java.png" alt="Java">
+            <p>Java</p>
+          </article>
+          <article>
+            <img src="assets/spring.webp" alt="Spring">
+            <p>Spring</p>
+          </article>
+          <article>
+            <img src="assets/nodejs.png" alt="Node.js">
+            <p>Node.js</p>
+          </article>
+          <article>
+            <img src="assets/aws.webp" alt="AWS">
+            <p>AWS</p>
+          </article>
+          <article>
+            <img src="assets/docker.png" alt="Docker">
+            <p>Docker</p>
+          </article>
+          <article>
+            <img src="assets/openai.png" alt="OpenAI">
+            <p>OpenAI</p>
+          </article>
+          <article>
+            <img src="assets/azure.png" alt="Azure">
+            <p>Azure</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formulario de contacto -->
+      <section id="contacto" class="contacto">
+        <h2>Contactame</h2>
+        <form action="#" method="post" class="scroll-hidden">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+
+          <div>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección CV / Resume -->
+      <section id="cv" class="cv-section scroll-hidden">
+        <h2>CV / Resume</h2>
+        <div class="cv-container">
+          <a href="https://drive.google.com/file/d/1XUh2gesPZMBaiFc4LBUQlxlnnbgR2Ns6/view" target="_blank" class="cv-card">
+            📄 CV en Español
+          </a>
+          <a href="https://drive.google.com/file/d/1mclbS8XgcbKAxdxB-S6OJ05n6Z3wl9l9/view" target="_blank" class="cv-card">
+            📄   Resume in English
+          </a>
+        </div>
+      </section>
+
+
+
+
+
+      <!--Botón Volver -->
+      <button id="btnSubir" title="Volver arriba">⬆️</button>
+  </main>
+
+
+
+
+  <!-- Pie de página -->
+  <footer>
+    <span>Todos los derechos reservados | By © Jorge Kalás</span>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,697 @@
+/* Estilo base del sitio */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  overflow-x: hidden; /* ✨ Clave para evitar desbordes */
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+}
+
+main{
+  position: relative;
+  z-index: 1;
+}
+
+/* Encabezados principales */
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Enlaces */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------- */
+/* NAVBAR - Menú de navegación */ 
+/* ------------------------- */
+nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+
+
+/* ------------------------- */
+/* SECCIÓN FOTO PERSONAL     */
+/* ------------------------- */
+section.foto_personal {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.foto_personal img {
+  width: 50vw;             
+  min-width: 150px;       
+  max-width: 300px;        
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ------------------------- */
+/* SECCIÓN SOBRE MÍ (Intro) */
+/* ------------------------- */
+.intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.bio-container p {
+  flex: 1 1 300px;
+  max-width: 350px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+
+
+  /* Estilo de tarjeta */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+
+
+.bio-container p:hover {
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+
+/* ------------------------- */
+/* SECCIÓN MIS REDES         */
+/* ------------------------- */
+.redes {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.redes h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Diseño individual de cada red */
+.red {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.red a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  border: 2px solid transparent; 
+  transition: all 0.3s ease;
+
+  height: 100px; /* altura uniforme */
+  box-sizing: border-box;
+}
+
+.red a:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  transform: translateY(-3px);
+  border-color: rgba(0, 123, 255, 0.3);
+}
+
+
+.red img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.red_github_text{
+  color: #000;
+}
+
+
+
+/* ------------------------- */
+/* STACK TECNOLÓGICO (Flexbox) */
+/* ------------------------- */
+.stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.stack-grid article {
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.stack-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0,123,255,0.15);
+  border-color: rgba(0, 123, 255, 0.3);
+}
+
+.stack-grid article:hover p {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.stack-grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.stack-grid p {
+  font-size: 14px;
+  color: #34495e;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+/* ------------------------- */
+/* FORMULARIO DE CONTACTO   */
+/* ------------------------- */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input:focus, textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+
+/* ------------------------- */
+/* CV - RESUME               */
+/* ------------------------- */
+
+.cv-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.cv-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cv-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cv-card {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.cv-card:hover {
+  border-color: #0077cc;
+  box-shadow: 0 0 10px rgba(0,123,255,0.15);
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+
+body.modo-oscuro .cv-section {
+  background-color: #1f1f1f;
+}
+
+body.modo-oscuro .cv-card {
+  background-color: #1e1e1e;
+  color: #90caf9;
+}
+
+
+/* ------------------------- */
+/* PIE DE PÁGINA             */
+/* ------------------------- */
+footer {
+  text-align: center;
+  margin: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  
+  z-index: 1100;
+}
+
+
+/* ------------------------- */
+/* MODO OSCURO               */
+/* ------------------------- */
+body.modo-oscuro {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.modo-oscuro h1, 
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro p,
+body.modo-oscuro label,
+body.modo-oscuro figcaption {
+  color: #f0f0f0;
+}
+
+body.modo-oscuro nav {
+  background-color: #1e1e1e;
+}
+
+body.modo-oscuro .bio-container p,
+body.modo-oscuro .red a,
+body.modo-oscuro .stack-grid article,
+body.modo-oscuro form {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border-color: rgba(255,255,255,0.1);
+}
+
+body.modo-oscuro a {
+  color: #90caf9;
+}
+
+body.modo-oscuro a:hover {
+  color: #64b5f6;
+}
+
+/* Botón de modo oscuro */
+
+.btn-modo-oscuro-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+
+.modo-oscuro-icon {
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  user-select: none;
+  
+  z-index: 1111;
+}
+
+.modo-oscuro-icon:hover {
+  transform: scale(1.2);
+}
+body.modo-oscuro .red_github_text {
+  color: #f0f0f0; 
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES (RESPONSIVE) */
+/* ------------------------- */
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+  nav ul.navbar {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .stack-grid {
+    gap: 20px;
+  }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul.navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .modo-oscuro-icon{
+    top:50%;
+  }
+
+  nav ul.navbar.activo {
+    display: flex;
+  }
+
+  nav ul.navbar li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.navbar li a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .modo-oscuro-btn {
+    width: 90%;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .redes-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+/* Mobile 1 */
+@media (max-width: 480px) {
+  nav ul.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  nav ul.navbar li {
+    width: 100%;
+  }
+
+  nav ul.navbar li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .modo-oscuro-btn {
+    width: 100%;
+    margin: 10px 0 0 auto;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+
+/* Mobile 2 */
+@media (max-width: 375px) {
+  nav ul.navbar li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .modo-oscuro-btn {
+    font-size: 13px;
+    padding: 8px 10px;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .foto_personal img {
+    width: 70vw;
+    max-width: 220px;
+  }
+
+  .stack-grid {
+    gap: 20px;
+  }
+
+  .stack-grid article {
+    width: 90px;
+    height: 90px;
+  }
+
+  .stack-grid img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stack-grid p {
+    font-size: 12px;
+  }
+
+
+}
+
+/* Animaciones al hacer scroll (scroll reveal básico) */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------- Zoom-in --------- */
+.scroll-zoom {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-zoom.scroll-show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animación especial para el título principal */
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #0077cc;
+  font-size: 28px;
+  width: 28ch;
+  animation: typing 3.5s steps(28, end) 1s forwards, hide-cursor 0s 3.6s forwards;
+}
+
+/* Efecto de escritura */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 28ch; }
+}
+
+/* Ocultar el cursor una vez terminado */
+@keyframes hide-cursor {
+  to { border-right: none; }
+}
+
+/* Botón para volver arriba */
+
+#btnSubir {
+  position: relative;
+  margin: 20px 2px 0px 0px;
+  font-size: 22px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  margin-top: 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#btnSubir:hover {
+  transform: scale(1.2);
+}
+
+/* Animación global al cargar el sitio */
+body {
+  opacity: 0;
+  animation: fadeInBody 1s ease-out forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-hidden {
+  transition-delay: 0.6s; /* aparece después del fade-in global */
+}
